@@ -18,6 +18,7 @@ This is one of my first forays into programming a game
 **Additional Things**
 * 13.1 / 13.2 : Find an image of a star and create a background of random star patterns
 * 13.3 : Create raindrops and get them to fall in the background
+* 13.5 : Create a game of "catch" with a falling ball and a moving player figure *side practice project*
 
 **Next Steps**
 * Make the aliens move
