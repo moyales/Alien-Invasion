@@ -14,3 +14,11 @@ This is one of my first forays into programming a game
     a new fleet.
 * Limit the number of ships the player can use, and end the game when the player has 
     used up the allotment of ships
+
+**Additional Things**
+* 13.1 / 13.2 : Find an image of a star and create a background of random star patterns
+
+**Next Steps**
+* Make the aliens move
+* Account for collisions between the ship and alien
+* Account for collisions between the bullets and alien
