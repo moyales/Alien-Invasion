@@ -79,6 +79,8 @@ def check_keydown_events(event, ai_settings, screen, stats, ship, aliens, bullet
 def fire_bullet(ai_settings, screen, ship, bullets):
     '''Fire a bullet if the limit has not been reached yet.'''
     # Create a new bullet and add it to the bullets group.
+    bulletSound = pygame.mixer.Sound("C:/Users/matto/Documents/Programming/Python_Work/alien_invasion/sounds/blaster.wav")
+    bulletSound.play()
     if len(bullets) < ai_settings.bullets_allowed:
         new_bullet = Bullet(ai_settings, screen, ship)
         bullets.add(new_bullet)
@@ -155,6 +157,10 @@ def check_bullet_alien_collisions(ai_settings, screen, stats, sb, ship, aliens, 
         stats.level += 1
         sb.prep_level()
 
+        # Level up sound!
+        lvl_up = pygame.mixer.Sound("C:/Users/matto/Documents/Programming/Python_Work/alien_invasion/sounds/lvl_up.wav")
+        lvl_up.play()
+
         create_fleet(ai_settings, screen, ship, aliens)
 
 def get_number_aliens_x(ai_settings, alien_width):
@@ -206,6 +212,8 @@ def change_fleet_direction(ai_settings, aliens):
     for alien in aliens.sprites():
         alien.rect.y += ai_settings.fleet_drop_speed
     ai_settings.fleet_direction *= -1
+    drop = pygame.mixer.Sound("C:/Users/matto/Documents/Programming/Python_Work/alien_invasion/sounds/drop.wav")
+    drop.play()
 
 def ship_hit(ai_settings, screen, stats, sb, ship, aliens, bullets):
     '''Respond to ship being hit by alien.'''

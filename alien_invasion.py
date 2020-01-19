@@ -34,6 +34,11 @@ def run_game():
     # Create the fleet of aliens.
     gf.create_fleet(ai_settings, screen, ship, aliens)
 
+    # Music!
+    pygame.mixer.music.load('C:/Users/matto/Documents/Programming/Python_Work/alien_invasion/sounds/star_wars.mp3')
+    pygame.mixer.music.set_volume(1.0)
+    pygame.mixer.music.play(-1)
+
     # Start the main loop for the game.
     while True:
 
