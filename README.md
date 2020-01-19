@@ -20,6 +20,10 @@ This is one of my first forays into programming a game
 * 13.3 : Create raindrops and get them to fall in the background
 * 13.5 : Create a game of "catch" with a falling ball and a moving player figure *side practice project*
     * 13.6 : Game over condition for this game of catch
+    
+* 14.4 : Store the high score in a file and retrieve file
+* 14.5 : Refactor game code so one function does one thing
+* 14.6 : Find ways to expand the game, such as adding *sound effects* or *shields*
 
 **Next Steps**
 * Make the aliens move (DONE)
